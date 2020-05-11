@@ -10,7 +10,7 @@ const TodoList = () => {
     }
 
     const clearCompleted = () => {
-
+        dispatch({ type: 'CLEAR_COMPLETED' })
     }
 
     const onSubmit = e => {

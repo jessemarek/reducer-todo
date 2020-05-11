@@ -27,16 +27,28 @@ export const todoReducer = (state, action) => {
             }
 
         case 'ADD_TODO_ITEM':
+            //Create a new ToDo item named from the input value
             const newItem = {
                 id: Date.now(),
                 item: state.inputValue,
                 completed: false
             }
+
+            //Add the newItem to the list and reset the input value
             return {
                 ...state, 
                 itemList: [...state.itemList, newItem],
                 inputValue: ''
             }
+
+        case 'TOGGLE_ITEM_COMPLETE':
+
+
+        case 'CLEAR_COMPLETED':
+            return {
+                ...state, itemList: [...state.itemList.filter(item => !item.completed)]
+            }
+
 
         default:
             return state
