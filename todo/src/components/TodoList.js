@@ -5,19 +5,6 @@ const TodoList = () => {
 
     const [state, dispatch] = useReducer(todoReducer, initialState)
 
-    const changeHandler = e => {
-        dispatch({ type: 'CHANGE_INPUT_VALUE', payload: e.target.value })
-    }
-
-    const toggleComplete = e => {
-        const id = e.target.id
-        dispatch({ type: 'TOGGLE_COMPLETE', payload: id })
-    }
-
-    const clearCompleted = () => {
-        dispatch({ type: 'CLEAR_COMPLETED' })
-    }
-
     const onSubmit = e => {
         e.preventDefault()
         dispatch({ type: 'ADD_ITEM' })
@@ -31,11 +18,11 @@ const TodoList = () => {
                 <label>Add to List:&nbsp;
                     <input 
                         type="text"
-                        onChange={changeHandler}
+                        onChange={e => dispatch({ type: 'CHANGE_INPUT_VALUE', payload: e.target.value })}
                         value={state.inputValue} 
                     />
                     <button>Submit</button>
-                    <button type="button" onClick={clearCompleted}>Clear Completed</button>
+                    <button type="button" onClick={() => dispatch({ type: 'CLEAR_COMPLETED' })}>Clear Completed</button>
                 </label>
             </form>
 
@@ -50,7 +37,7 @@ const TodoList = () => {
                                 key={item.id} 
                                 id={item.id} 
                                 className={item.completed ? 'completed' : ''}
-                                onClick={toggleComplete}
+                                onClick={e => dispatch({ type: 'TOGGLE_COMPLETE', payload: e.target.id })}
                             >
                                 {item.item}
                             </li>
