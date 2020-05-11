@@ -1,28 +1,16 @@
 import React, { useReducer } from 'react'
-
-const reducer = (state, action) => {
-    switch(action.type){
-        case 'CHANGE_INPUT_VALUE':
-            return {
-                ...state, inputValue: action.payload
-            }
-        default:
-            return state
-    }
-
-}
-
-const initialState = {
-    itemList: [],
-    inputValue: ''
-}
+import { initialState, todoReducer } from '../reducers/todoReducer'
 
 const TodoList = () => {
 
-    const [state, dispatch] = useReducer(reducer, initialState)
+    const [state, dispatch] = useReducer(todoReducer, initialState)
 
     const changeHandler = e => {
         dispatch({ type: 'CHANGE_INPUT_VALUE', payload: e.target.value })
+    }
+
+    const clearCompleted = () => {
+
     }
 
     const onSubmit = e => {
@@ -32,6 +20,13 @@ const TodoList = () => {
 
     return(
         <div>
+            <ul>
+                {
+                    //Map through itemList and create an <li> for each item
+                    state.itemList.map(item => <li key={item.id} className={item.completed ? 'completed' : ''}>{item.item}</li>)
+                }
+            </ul>
+
             <form onSubmit={onSubmit}>
                 <label>Add to List:&nbsp;
                     <input 
@@ -40,6 +35,7 @@ const TodoList = () => {
                         value={state.inputValue} 
                     />
                     <button>Submit</button>
+                    <button type="button" onClick={clearCompleted}>Clear Completed</button>
                 </label>
             </form>
         </div>
