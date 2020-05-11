@@ -9,13 +9,18 @@ const TodoList = () => {
         dispatch({ type: 'CHANGE_INPUT_VALUE', payload: e.target.value })
     }
 
+    const toggleComplete = e => {
+        const id = e.target.id
+        dispatch({ type: 'TOGGLE_COMPLETE', payload: id })
+    }
+
     const clearCompleted = () => {
         dispatch({ type: 'CLEAR_COMPLETED' })
     }
 
     const onSubmit = e => {
         e.preventDefault()
-        dispatch({ type: 'ADD_TODO_ITEM' })
+        dispatch({ type: 'ADD_ITEM' })
     }
 
     return(
@@ -23,7 +28,17 @@ const TodoList = () => {
             <ul>
                 {
                     //Map through itemList and create an <li> for each item
-                    state.itemList.map(item => <li key={item.id} className={item.completed ? 'completed' : ''}>{item.item}</li>)
+                    state.itemList.map(
+                        item => 
+                            <li 
+                                key={item.id} 
+                                id={item.id} 
+                                className={item.completed ? 'completed' : ''}
+                                onClick={toggleComplete}
+                            >
+                                {item.item}
+                            </li>
+                    )
                 }
             </ul>
 

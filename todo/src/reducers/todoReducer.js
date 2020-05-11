@@ -22,11 +22,13 @@ export const initialState = {
 export const todoReducer = (state, action) => {
     switch(action.type){
         case 'CHANGE_INPUT_VALUE':
+            //Store the value of the input in state
             return {
-                ...state, inputValue: action.payload
+                ...state, 
+                inputValue: action.payload
             }
 
-        case 'ADD_TODO_ITEM':
+        case 'ADD_ITEM':
             //Create a new ToDo item named from the input value
             const newItem = {
                 id: Date.now(),
@@ -41,14 +43,20 @@ export const todoReducer = (state, action) => {
                 inputValue: ''
             }
 
-        case 'TOGGLE_ITEM_COMPLETE':
+        case 'TOGGLE_COMPLETE':
+            //Toggle the completed: value of the list item that was clicked
+            return {
+                ...state, 
+                itemList: [...state.itemList.map(item => item.id === Number(action.payload) ? { ...item, completed: !item.completed } : item)]
+            }
 
 
         case 'CLEAR_COMPLETED':
+            //Remove any items from the list that have a completed: true value
             return {
-                ...state, itemList: [...state.itemList.filter(item => !item.completed)]
+                ...state, 
+                itemList: [...state.itemList.filter(item => !item.completed)]
             }
-
 
         default:
             return state
