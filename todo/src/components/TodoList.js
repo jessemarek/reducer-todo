@@ -38,7 +38,9 @@ const TodoList = () => {
                     <button type="button" onClick={clearCompleted}>Clear Completed</button>
                 </label>
             </form>
-            
+
+            <p>Click an item to mark it complete!</p>
+
             <ul>
                 {
                     //Map through itemList and create an <li> for each item
