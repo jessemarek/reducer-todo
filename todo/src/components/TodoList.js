@@ -7,7 +7,15 @@ const TodoList = () => {
 
     const onSubmit = e => {
         e.preventDefault()
-        dispatch({ type: 'ADD_ITEM' })
+        
+        //Create a new ToDo item named from the input value
+        const newItem = {
+            id: Date.now(),
+            item: state.inputValue,
+            completed: false
+        }
+
+        dispatch({ type: 'ADD_ITEM', payload: newItem })
     }
 
     return(

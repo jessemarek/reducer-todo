@@ -39,17 +39,11 @@ export const todoReducer = (state, action) => {
             }
 
         case 'ADD_ITEM':
-            //Create a new ToDo item named from the input value
-            const newItem = {
-                id: Date.now(),
-                item: state.inputValue,
-                completed: false
-            }
-
+            
             //Add the newItem to the list and reset the input value
             return {
                 ...state, 
-                itemList: [...state.itemList, newItem],
+                itemList: [...state.itemList, action.payload],
                 inputValue: ''
             }
 
