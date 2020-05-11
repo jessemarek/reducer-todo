@@ -25,6 +25,20 @@ const TodoList = () => {
 
     return(
         <div>
+            <h2>My ToDo List</h2>
+
+            <form onSubmit={onSubmit}>
+                <label>Add to List:&nbsp;
+                    <input 
+                        type="text"
+                        onChange={changeHandler}
+                        value={state.inputValue} 
+                    />
+                    <button>Submit</button>
+                    <button type="button" onClick={clearCompleted}>Clear Completed</button>
+                </label>
+            </form>
+            
             <ul>
                 {
                     //Map through itemList and create an <li> for each item
@@ -41,18 +55,6 @@ const TodoList = () => {
                     )
                 }
             </ul>
-
-            <form onSubmit={onSubmit}>
-                <label>Add to List:&nbsp;
-                    <input 
-                        type="text"
-                        onChange={changeHandler}
-                        value={state.inputValue} 
-                    />
-                    <button>Submit</button>
-                    <button type="button" onClick={clearCompleted}>Clear Completed</button>
-                </label>
-            </form>
         </div>
     )
 }

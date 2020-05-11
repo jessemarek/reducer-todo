@@ -1,18 +1,28 @@
 export const initialState = {
     itemList: [
         {
-            id: 1234567890,
-            item: 'Build Reducer Function',
-            completed: false
-        },
-        {
             id: 2345678901,
             item: 'Create Initial State',
             completed: false
         },
         {
+            id: 1234567890,
+            item: 'Build Reducer Function',
+            completed: false
+        },
+        {
             id: 3456789012,
             item: 'Dispatch Actions',
+            completed: false
+        },
+        {
+            id: 4567890123,
+            item: 'Toggle Items Complete',
+            completed: false
+        },
+        {
+            id: 5678901234,
+            item: 'Clear Completed Items',
             completed: false
         }
     ],
