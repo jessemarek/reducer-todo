@@ -50,8 +50,18 @@ p {
   width: 80%;
   height: 80vh;
   margin: 5% auto;
-  background-image: url(https://cdn.printablepaper.net/samples/Yellow_Legal_Lined_Portrait_Wide_Blue.png);
+  background-image: url(/yellow-paper.png);
   background-size: cover;
   border: 1px solid black;
   box-shadow: 3px 3px 10px #444;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 60%;
+  }
+
+  button {
+    margin: 5% 3% 0;
+  }
 }

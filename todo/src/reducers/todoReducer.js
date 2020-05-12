@@ -2,27 +2,27 @@ export const initialState = {
     itemList: [
         {
             id: 2345678901,
-            item: 'Create Initial State',
+            item: 'Build New App',
             completed: false
         },
         {
             id: 1234567890,
-            item: 'Build Reducer Function',
+            item: 'Learn Redux',
             completed: false
         },
         {
             id: 3456789012,
-            item: 'Dispatch Actions',
+            item: 'Refactor App',
             completed: false
         },
         {
             id: 4567890123,
-            item: 'Toggle Items Complete',
+            item: '?????',
             completed: false
         },
         {
             id: 5678901234,
-            item: 'Clear Completed Items',
+            item: 'Profit',
             completed: false
         }
     ],
