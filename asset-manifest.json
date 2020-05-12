@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rudecer-todo/static/css/main.1f5fd216.chunk.css",
+    "main.js": "/rudecer-todo/static/js/main.35cdfd4d.chunk.js",
+    "main.js.map": "/rudecer-todo/static/js/main.35cdfd4d.chunk.js.map",
+    "runtime-main.js": "/rudecer-todo/static/js/runtime-main.cd36bb7d.js",
+    "runtime-main.js.map": "/rudecer-todo/static/js/runtime-main.cd36bb7d.js.map",
+    "static/js/2.6d66bd54.chunk.js": "/rudecer-todo/static/js/2.6d66bd54.chunk.js",
+    "static/js/2.6d66bd54.chunk.js.map": "/rudecer-todo/static/js/2.6d66bd54.chunk.js.map",
+    "index.html": "/rudecer-todo/index.html",
+    "precache-manifest.ec7a5ca9efd681e4cddb6470ff5c3ff2.js": "/rudecer-todo/precache-manifest.ec7a5ca9efd681e4cddb6470ff5c3ff2.js",
+    "service-worker.js": "/rudecer-todo/service-worker.js",
+    "static/css/main.1f5fd216.chunk.css.map": "/rudecer-todo/static/css/main.1f5fd216.chunk.css.map",
+    "static/js/2.6d66bd54.chunk.js.LICENSE.txt": "/rudecer-todo/static/js/2.6d66bd54.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd36bb7d.js",
+    "static/js/2.6d66bd54.chunk.js",
+    "static/css/main.1f5fd216.chunk.css",
+    "static/js/main.35cdfd4d.chunk.js"
+  ]
+}
