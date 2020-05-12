@@ -3,11 +3,10 @@ h2 {
   font-size: 3.2rem;
 }
 
-ul {
+ol {
   width: 50%;
   margin: 0 auto;
   padding: 1%;
-  list-style: none;
 }
 
 form {

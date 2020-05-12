@@ -43,12 +43,12 @@ const TodoList = () => {
 
             <p>Click an item to mark it complete!</p>
 
-            <ul>
+            <ol>
                 {
                     //Map through itemList and create an <li> for each item
                     state.itemList.map(item => <ListItem key={item.id} data={item} markComplete={markComplete} />)
                 }
-            </ul>
+            </ol>
         </div>
     )
 }
