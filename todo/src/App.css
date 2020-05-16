@@ -50,7 +50,7 @@ p {
   width: 80%;
   height: 80vh;
   margin: 5% auto;
-  background-image: url(/yellow-paper.png);
+  background-image: url(%PUBLIC_URL%/yellow-paper.png);
   background-size: cover;
   border: 1px solid black;
   box-shadow: 3px 3px 10px #444;
