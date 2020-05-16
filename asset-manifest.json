@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reducer-todo/static/css/main.92f260eb.chunk.css",
+    "main.css": "/reducer-todo/static/css/main.011d3be5.chunk.css",
     "main.js": "/reducer-todo/static/js/main.35cdfd4d.chunk.js",
     "main.js.map": "/reducer-todo/static/js/main.35cdfd4d.chunk.js.map",
     "runtime-main.js": "/reducer-todo/static/js/runtime-main.06e1a281.js",
@@ -8,15 +8,15 @@
     "static/js/2.6d66bd54.chunk.js": "/reducer-todo/static/js/2.6d66bd54.chunk.js",
     "static/js/2.6d66bd54.chunk.js.map": "/reducer-todo/static/js/2.6d66bd54.chunk.js.map",
     "index.html": "/reducer-todo/index.html",
-    "precache-manifest.319618d0959b64a609c991d4ed2c6b4c.js": "/reducer-todo/precache-manifest.319618d0959b64a609c991d4ed2c6b4c.js",
+    "precache-manifest.1d73ed0e8430b6b4d99880ab28fe9b87.js": "/reducer-todo/precache-manifest.1d73ed0e8430b6b4d99880ab28fe9b87.js",
     "service-worker.js": "/reducer-todo/service-worker.js",
-    "static/css/main.92f260eb.chunk.css.map": "/reducer-todo/static/css/main.92f260eb.chunk.css.map",
+    "static/css/main.011d3be5.chunk.css.map": "/reducer-todo/static/css/main.011d3be5.chunk.css.map",
     "static/js/2.6d66bd54.chunk.js.LICENSE.txt": "/reducer-todo/static/js/2.6d66bd54.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.06e1a281.js",
     "static/js/2.6d66bd54.chunk.js",
-    "static/css/main.92f260eb.chunk.css",
+    "static/css/main.011d3be5.chunk.css",
     "static/js/main.35cdfd4d.chunk.js"
   ]
 }
