@@ -1,0 +1,67 @@
+h2 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+ol {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+form {
+  width: 65%;
+  margin: 1% auto;
+  padding: 1.5%;
+}
+
+input {
+  margin: 0 2%;
+  border-bottom: 1px solid;
+  border-color: transparent transparent black transparent;
+  background: transparent;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+button {
+  margin: 0 1%;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 0 2%;
+  background: transparent;
+  font-weight: bold;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+#root {
+  width: 80%;
+  height: 80vh;
+  margin: 5% auto;
+  background-image: url(https://jessemarek.github.io/reducer-todo/yellow-paper.png);
+  background-size: cover;
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px #444;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 60%;
+  }
+
+  button {
+    margin: 5% 3% 0;
+  }
+}
